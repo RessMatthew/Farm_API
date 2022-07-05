@@ -16,11 +16,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @author lgh
  */
 @SpringBootApplication
+@EnableSwagger2//接口文档生成器
 @ComponentScan(basePackages = {"com.yami.shop"})
 public class ApiApplication extends SpringBootServletInitializer{
 
