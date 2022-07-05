@@ -10,6 +10,8 @@ import com.yami.shop.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class FarmServiceImpl extends ServiceImpl<FarmMapper, Farm> implements FarmService {
 
@@ -18,8 +20,18 @@ public class FarmServiceImpl extends ServiceImpl<FarmMapper, Farm> implements Fa
 
     @Override
     public Farm getFarmById(long id){
-
         Farm farm = farmMapper.selectById(id);
         return farm;
     }
+
+    @Override
+    public void updateFarm(Farm farm){
+        farmMapper.updateById(farm);
+    }
+
+    @Override
+    public List<Farm> getAllFarms(){
+        return farmMapper.selectList(null);
+    }
+
 }
