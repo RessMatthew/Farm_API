@@ -16,16 +16,16 @@ public class Farm implements Serializable {
 
     private String name;
 
-    private String longitude;
+    private double longitude;
 
-    private String latitude;
+    private double latitude;
 
     private String address;
 
     private String openingTime;
 
-    private String status;
+    private int status;
 
-    private String distance;
+    private double distance;
 
 }
