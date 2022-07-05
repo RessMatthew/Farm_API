@@ -2,7 +2,8 @@ server:
   port: 8111
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/yami_shops?allowMultiQueries=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
+    #     180.76.233.143    root  xiewantong.123
+    url: jdbc:mysql://180.76.233.143:3306/yami_shops?allowMultiQueries=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
     username: root
     password: xiewantong.123
     driver-class-name: com.mysql.cj.jdbc.Driver
