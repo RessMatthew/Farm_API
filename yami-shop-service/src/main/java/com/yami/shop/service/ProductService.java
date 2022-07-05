@@ -48,7 +48,6 @@ public interface ProductService extends IService<Product> {
      */
     Product getProductByProdId(Long prodId);
 
-
     void removeProductByProdId(Long prodId);
 
     void removeProductCacheByProdId(Long prodId);
