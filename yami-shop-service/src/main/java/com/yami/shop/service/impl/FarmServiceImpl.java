@@ -1,5 +1,6 @@
 package com.yami.shop.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.yami.shop.bean.model.Farm;
 import com.yami.shop.bean.model.Product;
@@ -34,4 +35,16 @@ public class FarmServiceImpl extends ServiceImpl<FarmMapper, Farm> implements Fa
         return farmMapper.selectList(null);
     }
 
+    @Override
+    public void insertFarm(Farm farm){
+        farmMapper.insert(farm);
+    }
+
+    @Override
+    public void deleteFarmById(long id){
+        System.out.println("service "+id);
+        QueryWrapper<Farm> queryWrapper=new QueryWrapper<>();
+        queryWrapper.eq("id",id);
+        farmMapper.delete(queryWrapper);
+    }
 }

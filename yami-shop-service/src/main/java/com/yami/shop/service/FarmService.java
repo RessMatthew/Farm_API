@@ -16,4 +16,8 @@ public interface FarmService extends IService<Farm> {
 
     List<Farm> getAllFarms();
 
+    void insertFarm(Farm farm);
+
+    void deleteFarmById(long id);
+
 }
